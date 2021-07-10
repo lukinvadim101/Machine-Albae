@@ -1,0 +1,22 @@
+@import "variables";
+@import "header";
+@import "about";
+@import "footer";
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  // margin: 0;
+  // padding: 0;
+  background: $bg-white-theme;
+  min-height: 100vh;
+}
+.container{
+  width: 78vw;
+  margin: 0 auto;
+}
+
+
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}

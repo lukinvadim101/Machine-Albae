@@ -1,0 +1,19 @@
+.header {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    margin: 0;
+    width: 141px;
+    height: 23px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  &__login {
+    width: 65px;
+    height: 23px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
