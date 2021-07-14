@@ -69,11 +69,4 @@ gulp.task('images', function () {
 		.pipe(browserSync.stream());
 });
 
-task('lint', () => {
-	return src(['scripts/*.js'])
-		.pipe(eslint())
-		.pipe(eslint.format())
-		.pipe(eslint.failAfterError());
-});
-
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images','lint'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));

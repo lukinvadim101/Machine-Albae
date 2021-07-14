@@ -1,0 +1,82 @@
+.header__logo {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about__tech{
+  &__title {
+    animation: 3s cubic-bezier(.165,.015,0,.965) 0s drop;
+  }
+  &__nlp {
+    animation: 3.5s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__mlds{
+    animation: 3.6s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__mlops{
+    animation: 3.7s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__rd{
+    animation: 3.8s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__da{
+    animation: 3.9s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__lddm{
+    animation: 4s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__ac{
+    animation: 4.1s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+  &__smbl{
+    animation: 4.2s cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+  }
+}
+
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes drop{
+  0%{
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes drop_hide{
+  0%{
+    transform: translateY(300px);
+    opacity: 0;
+    visibility: hidden;
+
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+}
+
+// transition: transform .75s cubic-bezier(.165,.015,0,.965),opacity .5s ease-in-out;
+//     transition: opacity .5s ease-in-out;
+//     transform: translate3d(0,0,0);
+//  }

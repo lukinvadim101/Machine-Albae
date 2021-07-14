@@ -1,23 +1,25 @@
 .about {
-  margin-top: 120px;
+  margin-top: 2em;
   display: flex;
   justify-content: space-between;
   justify-items: start;
   flex-flow: row wrap;
   width: 85%;
+  flex: 1 0 auto;
   &__title {
     margin: 0;
     font-weight: 400;
     font-size: 18px;
   }
-
   &__tech {
     width: 346px;
     height: 327px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    white-space: nowrap;
     flex: 0 1 346px;
+    margin-top: 1em;
     & > div {
       height: 23px;
       line-height: 23px;
@@ -39,7 +41,9 @@
   }
   &__us {
     flex: 0 1 465px;
-
+    &__wrapper {
+      margin-top: 1em;
+    }
 
   }
 }
