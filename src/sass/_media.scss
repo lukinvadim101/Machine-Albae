@@ -25,6 +25,7 @@
       flex-basis: auto;
       &__title {
         text-align: center;
+        font-weight: bold;
         // margin-left: 42px;
       }
       &__wrapper {
@@ -34,12 +35,22 @@
   }
   .footer{
     margin-top: 4em;
-    // justify-content: center;
+    padding: 0;
+    & > li {
+      margin-bottom: .5em;
+    }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
+  .container {
+    width: 95%;
+  }
   .footer{
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
+    & > li:not(:first-child) {
+      margin-left: .5em;
+    }
   }
 }

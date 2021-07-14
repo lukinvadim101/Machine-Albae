@@ -5,16 +5,21 @@
   flex-flow: row wrap;
   align-items: center;
   margin: 3em 0;
-
-
-  & > div {
+  padding: 0;
+  & > li {
+    list-style: none;
+    text-decoration: none;
     border: 2px solid #DADADA;
     padding: 3px 6px;
     white-space: nowrap;
-    align-self: center;
-    margin: .3em;
+    // align-self: center;
+    &:hover {
+      transition-duration: 1.5s;
+      border-color: var(--acent-color);
+      cursor: pointer;
+    }
   }
-  & > div :not(:first-child) {
+  & > li:not(:first-child) {
     margin-left: 45px;
   }
 

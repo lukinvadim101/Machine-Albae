@@ -3,18 +3,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 1
+  flex: 1;
+  flex-flow: row wrap;
   &__logo {
     margin: 0;
     width: 141px;
     height: 23px;
     font-weight: 300;
     font-size: 18px;
+    white-space: nowrap;
   }
   &__login {
     width: 65px;
     height: 23px;
     font-weight: 300;
     font-size: 18px;
+    white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
