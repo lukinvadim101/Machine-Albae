@@ -6,7 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
-const eslint = require('gulp-eslint');
+
 
 gulp.task('server', function() {
 

@@ -1,16 +1,16 @@
 :root {
-  --duration_one: 3s;
-  --duration_two: 3.5s;
-  --duration_three: 1s;
+  --duration_one: 1s; //header logo
+  --duration_two: .8s; // menu list & content
+  --duration_three: 2s; // start menu btn
 }
 
 .header__logo {
-  animation: fadeIn  var(--duration_three)  ease-in-out;
+  animation: fadeIn  var(--duration_one)  ease-in-out;
 }
 
 .about__tech{
-  &__title {
-    animation: var(--duration_one) cubic-bezier(.165,.015,0,.965) 0s drop;
+  &__title { // start menu drop
+    animation: var(--duration_three) cubic-bezier(.165,.015,0,.965) 0s drop; // start menu btn
   }
   &__nlp {
     animation: var(--duration_two) cubic-bezier(.165,.015,0,.965) 0s drop_hide;
@@ -38,6 +38,9 @@
   }
 }
 
+.about__content {
+  animation: var(--duration_two) cubic-bezier(.165,.015,0,.965) 0s drop_hide;
+}
 
 @keyframes fadeIn{
   0%{
@@ -79,10 +82,5 @@
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
-}
-}
-
-// transition: transform .75s cubic-bezier(.165,.015,0,.965),opacity .5s ease-in-out;
-//     transition: opacity .5s ease-in-out;
-//     transform: translate3d(0,0,0);
-//  }
+  }
+};
