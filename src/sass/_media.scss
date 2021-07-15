@@ -67,12 +67,11 @@
 
 @media (max-width: 490px) {
   .about {
+    margin-top: 3em;
     &__tech ul>li {
       height: max-content;
-      margin-top: .7em;
-    }
-    &__menu{
-      margin-top: 1em;
+      margin-top: .2em
+      ;
     }
   }
 
