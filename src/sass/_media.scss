@@ -28,17 +28,28 @@
         font-weight: bold;
       }
       &__wrapper {
-        margin-top: 4em;
+        margin-top: 2.5em;
       }
     }
   }
   .footer{
     margin-top: 4em;
     padding: 0;
+    justify-content: center;
     & > li {
       margin-bottom: .5em;
     }
   }
+}
+
+@media (max-width: 1024px) {
+  .about__tech {
+      margin-left: 0;
+      width: 90%;
+      &__title {
+        margin-right: 2em;
+      }
+    }
 }
 
 @media (max-width: 740px) {
@@ -52,4 +63,17 @@
       margin-left: .5em;
     }
   }
+}
+
+@media (max-width: 490px) {
+  .about {
+    &__tech ul>li {
+      height: max-content;
+      margin-top: .7em;
+    }
+    &__menu{
+      margin-top: 1em;
+    }
+  }
+
 }

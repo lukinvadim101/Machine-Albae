@@ -3,10 +3,6 @@ let jsTriggers = document.querySelectorAll('.js-tab-trigger'),
     startBtn = document.getElementById('start');
     menuDrop = document.querySelector('.about__menu');
 
-startBtn.addEventListener('click', function() {
-  menuDrop.classList.remove('disable');
-});
-
 jsTriggers.forEach(function(trigger) {
   trigger.addEventListener('click', function() {
       let id = this.getAttribute('data-tab'),

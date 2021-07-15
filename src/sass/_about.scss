@@ -21,8 +21,7 @@
     &__title {
       font-weight: 400;
     }
-    & Ul {
-      margin: 0;
+    & Ul {GIT
       padding: 0;
     }
     & ul > li {
@@ -31,7 +30,7 @@
     }
     & ul > li , &__title {
       position: relative;
-      transition: .9s cubic-bezier(.165,.015,0,.965); // выезд пунктов меню
+
       left: 0;
       &:hover {
         left: 42px;
