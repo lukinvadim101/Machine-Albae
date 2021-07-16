@@ -15,8 +15,12 @@
     font-weight: 300;
     font-size: 18px;
     white-space: nowrap;
-    &:hover {
+    text-decoration: none;
+    color: var(--color-text-main);
+    &:hover, :visited, :active {
       cursor: pointer;
+      color: var(--color-text-main);
+      text-decoration: none;
     }
   }
 }
