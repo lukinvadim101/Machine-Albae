@@ -1,5 +1,8 @@
 @media (max-width: 1250px){
-    .about {
+  .header__logo {
+    margin-left: 2em;
+  }
+  .about {
     margin-top: 80px;
     width: 100%;
     flex-direction: column;
@@ -15,12 +18,10 @@
       &__title {
         justify-self: start;
       }
-      & > div {
-        margin: 12px  25px 12px 0;
-      }
     }
+
     &__us {
-      margin-top: 3em;
+      margin-top: 1em;
       height: auto;
       flex-basis: auto;
       &__title {
@@ -66,13 +67,26 @@
 }
 
 @media (max-width: 490px) {
+  html.dark .header__logo {
+    margin-left: 1em;
+    background: url('../img/logo_white_vertical.svg') no-repeat;
+    height: 86px;
+    width: 69px;
+
+  }
+
+  html.light .header__logo {
+    margin-left: 1em;
+    background: url('../img/logo_black_vertical.svg') no-repeat;
+    height: 86px;
+    width: 69px;
+  }
+}
   .about {
     margin-top: 3em;
     &__tech ul>li {
       height: max-content;
-      margin-top: .2em
+      margin-top: .3em
       ;
     }
   }
-
-}

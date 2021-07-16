@@ -17,6 +17,18 @@ html.dark {
 
 html.dark .header__logo {
   color: var(--acent-color);
+  box-sizing: border-box;
+  background: url('../img/logo_white_horizontal.svg') no-repeat;
+  width: 205px;
+  height: 60px;
+}
+
+html.light .header__logo {
+  color: var(--acent-color);
+  box-sizing: border-box;
+  background: url('../img/logo_black_horizontal.svg') no-repeat;
+  width: 205px;
+  height: 60px;
 }
 
 body {
@@ -27,9 +39,12 @@ body {
 .about__title {
   color: var(--color-text-main);
 }
-
-.about__tech__title:before {
-  background-color: var(--color-text-main);
+.about__tech {
+  & ul > li , &__title {
+    &:hover:before {
+      background-color: var(--color-text-main);
+    }
+  }
 }
 
 .about__us__txt {
